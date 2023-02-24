@@ -1,0 +1,68 @@
+@import url(/css/resetstyle.css);
+@import url(/css/fonts.css);
+* {
+  font-family: "Lab Grotesque";
+  font-style: normal;
+}
+
+body {
+  background-color: #1e1e1d;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 76px;
+}
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+.header .logo__title {
+  font-family: "Scania Sans CY Headline";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 70px;
+  letter-spacing: 0.105em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.header .logo__desc {
+  margin-left: 39px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  color: #6d6d6d;
+}
+.header .nav {
+  display: flex;
+}
+.header .nav__list {
+  display: flex;
+  align-items: center;
+}
+.header .nav__item {
+  margin: 0 21px 0 21px;
+}
+.header .nav__item a {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #949494;
+}
+.header .nav__call {
+  margin: 10px 0 0 40px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(45deg, #fea96c 20%, #feb97a 45%, #ffce94 85%, #ffddab 100%);
+  border-radius: 2px;
+}/*# sourceMappingURL=style.css.map */
