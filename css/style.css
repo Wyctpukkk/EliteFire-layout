@@ -6,11 +6,11 @@
 }
 
 body {
-  background-color: #1e1e1d;
+  background-color: #191918;
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1196px;
   margin: 0 auto;
 }
 
@@ -59,10 +59,100 @@ body {
   text-transform: uppercase;
   color: #949494;
 }
+.header .nav__item a.active {
+  color: #ffcf7a;
+}
 .header .nav__call {
   margin: 10px 0 0 40px;
   width: 50px;
   height: 50px;
   background: linear-gradient(45deg, #fea96c 20%, #feb97a 45%, #ffce94 85%, #ffddab 100%);
   border-radius: 2px;
+}
+
+.product {
+  position: relative;
+  margin-top: 98px;
+}
+.product__title {
+  font-weight: 250;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  background: linear-gradient(200deg, #ffffff 59.37%, rgba(255, 255, 255, 0) 99.78%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.product__price {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #ffcf7a;
+  margin-top: 29px;
+}
+.product__price span {
+  letter-spacing: 0.05em;
+  margin-left: 5px;
+  font-size: 36px;
+}
+.product__property {
+  display: flex;
+  margin-top: 86px;
+}
+.product .fabric {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.product .fabric__img {
+  width: 30px;
+  height: 30px;
+}
+.product .fabric__text {
+  margin-top: 14px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+.product .delivery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 80px;
+}
+.product .delivery__img {
+  width: 30px;
+  height: 30px;
+}
+.product .delivery__text {
+  margin-top: 20px;
+  font-family: "Lab Grotesque";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+}
+.product__photo {
+  position: absolute;
+  top: 0px;
+  left: 510px;
+}
+.product__photo_shadow {
+  position: absolute;
+  top: 50px;
+  left: 710px;
+  width: 390px;
+  height: 110px;
+  border-radius: 500px;
+  transform: rotate(161.87deg);
+  background: #a74e02;
+  filter: blur(100px);
+  z-index: -1;
 }/*# sourceMappingURL=style.css.map */

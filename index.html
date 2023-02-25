@@ -20,7 +20,9 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item"><a href="#">Продукция</a></li>
-            <li class="nav__item"><a href="#">конструктор</a></li>
+            <li class="nav__item">
+              <a class="active" href="#">конструктор</a>
+            </li>
             <li class="nav__item"><a href="#">опыт</a></li>
             <li class="nav__item"><a href="#">контакты</a></li>
           </ul>
@@ -29,7 +31,33 @@
           </button>
         </nav>
       </header>
-      <main></main>
+      <main>
+        <section class="product">
+          <h2 class="product__title">
+            Автоматические <br />
+            биокамины
+          </h2>
+          <p class="product__price">от <span>99 000₽</span></p>
+          <div class="product__property">
+            <div class="product__fabric fabric">
+              <img class="fabric__img" src="/img/gear.png" alt="gear img" />
+              <p class="fabric__text">
+                Свое <br />
+                производство
+              </p>
+            </div>
+            <div class="product__delivery delivery">
+              <img class="delivery__img" src="/img/plane.png" alt="plane img" />
+              <p class="delivery__text">
+                Доставка в любую <br />
+                точку мира
+              </p>
+            </div>
+          </div>
+          <img class="product__photo" src="/img/kamin.png" alt="plane img" />
+          <div class="product__photo_shadow"></div>
+        </section>
+      </main>
       <footer></footer>
     </div>
   </body>

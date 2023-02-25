@@ -6,11 +6,11 @@
   font-style: normal;
 }
 body {
-  background-color: #1e1e1d;
+  background-color: #191918;
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1196px;
   margin: 0 auto;
 }
 
@@ -56,6 +56,9 @@ body {
         text-transform: uppercase;
         color: #949494;
       }
+      a.active {
+        color: #ffcf7a;
+      }
     }
     &__call {
       margin: 10px 0 0 40px;
@@ -73,19 +76,96 @@ body {
   }
 }
 
-.header {
-  .logo {
-    &__title {
-    }
-    &__title {
+.product {
+  position: relative;
+  margin-top: 98px;
+  &__title {
+    font-weight: 250;
+    font-size: 64px;
+    line-height: 80px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(
+      200deg,
+      #ffffff 59.37%,
+      rgba(255, 255, 255, 0) 99.78%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  &__price {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #ffcf7a;
+    margin-top: 29px;
+    span {
+      letter-spacing: 0.05em;
+      margin-left: 5px;
+      font-size: 36px;
     }
   }
-  .nav {
-    &__list {
+  &__property {
+    display: flex;
+    margin-top: 86px;
+  }
+  .fabric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img {
+      width: 30px;
+      height: 30px;
     }
-    &__item {
+    &__text {
+      margin-top: 14px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: #ffffff;
     }
-    &__call {
+  }
+  &__delivery {
+  }
+  .delivery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 80px;
+    &__img {
+      width: 30px;
+      height: 30px;
+    }
+    &__text {
+      margin-top: 20px;
+      font-family: 'Lab Grotesque';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  &__photo {
+    position: absolute;
+    top: 0px;
+    left: 510px;
+    &_shadow {
+      position: absolute;
+      top: 50px;
+      left: 710px;
+      width: 390px;
+      height: 110px;
+      border-radius: 500px;
+      transform: rotate(161.87deg);
+      background: #a74e02;
+      filter: blur(100px);
+      z-index: -1;
     }
   }
 }
