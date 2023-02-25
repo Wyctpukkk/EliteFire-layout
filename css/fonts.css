@@ -35,3 +35,21 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Scania Sans CY';
+  src: local('Scania Sans CY  Bold'), local('Scania-Sans-CY--Bold'),
+    url('/fonts/ScaniaSansCY-Bold.woff2') format('woff2'),
+    url('/fonts/ScaniaSansCY-Bold.woff') format('woff'),
+    url('/fonts/ScaniaSansCY-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Scania Sans CY';
+  src: local('Scania Sans CY  Regular'), local('Scania-Sans-CY--Regular'),
+    url('/fonts/ScaniaSansCY-Regular.woff2') format('woff2'),
+    url('/fonts/ScaniaSansCY-Regular.woff') format('woff'),
+    url('/fonts/ScaniaSansCY-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
