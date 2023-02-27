@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,7 +26,7 @@
             <li class="nav__item"><a href="#">опыт</a></li>
             <li class="nav__item"><a href="#">контакты</a></li>
           </ul>
-          <button class="nav__call" href="#">
+          <button class="nav__call">
             <img src="/img/phone.png" alt="phone img" />
           </button>
         </nav>
@@ -87,8 +87,7 @@
               <li class="feature__item">
                 <img
                   class="feature__img"
-                  width="36px"
-                  height="46px"
+                  style="width: 36px; height: 46px"
                   src="/img/fire.png"
                   alt="fire img"
                 />
@@ -100,15 +99,13 @@
               <li class="feature__item">
                 <img
                   class="feature__img"
-                  width="32px"
-                  height="42px"
+                  style="width: 32px; height: 42px"
                   src="/img/fuel.png"
                   alt="fuel img"
                 />
                 <img
                   class="feature__img_little"
-                  width="15px"
-                  height="19px"
+                  style="width: 15px; height: 19px"
                   src="/img/fuel2.png"
                   alt="fuel img"
                 />
@@ -120,8 +117,7 @@
               <li class="feature__item">
                 <img
                   class="feature__img"
-                  width="40px"
-                  height="40px"
+                  style="width: 40px; height: 40px"
                   src="/img/x.png"
                   alt="X img"
                 />
@@ -131,7 +127,7 @@
           </div>
         </section>
         <section class="refuel">
-          <h4 class="refuel__title">заправка</h4>
+          <p class="refuel__title">заправка</p>
           <p class="refuel__desc">
             Внутри не просто труба. Спроектированный <br />
             нами бак, самого большого обьема среди <br />
@@ -143,15 +139,13 @@
           <div class="refuel__instr instr">
             <img
               class="instr__hose"
-              width="20px"
-              height="20px"
+              style="width: 20px; height: 20px"
               src="/img/hose.png"
               alt="hose"
             />
             <img
               class="instr__power"
-              width="20px"
-              height="20px"
+              style="width: 20px; height: 20px"
               src="/img/power.png"
               alt="power"
             />
@@ -207,6 +201,7 @@
           <section class="fuel">
             <p class="fuel__title">Топливный блок</p>
             <div class="fuel__photo">
+              <div class="fuel__photo_shadow"></div>
               <p class="fuel__photo_desc">
                 Лицевая панель из жаропрочной нержавеющей стали толщиной 5 мм
               </p>
@@ -215,7 +210,6 @@
                 class="fuel__photo_img"
                 src="/img/kamin-3.png"
                 alt="kaming img"
-                class="fuel__photo_img"
               />
             </div>
             <article class="complectation">
@@ -367,11 +361,23 @@
               <div class="parameters__panel">
                 <p class="parameters__title">Лицевая панель</p>
                 <ul class="parameters__list">
-                  <img class="parameters__list_prev" src="/img/arrow.png" />
+                  <li>
+                    <img
+                      class="parameters__list_prev"
+                      src="/img/arrow.png"
+                      alt="arrow"
+                    />
+                  </li>
                   <li class="parameters__item">
                     <img src="/img/panel.png" alt="panel" />
                   </li>
-                  <img class="parameters__list_next" src="/img/arrow.png" />
+                  <li>
+                    <img
+                      class="parameters__list_next"
+                      src="/img/arrow.png"
+                      alt="arrow"
+                    />
+                  </li>
                 </ul>
                 <ul class="parameters__dots-list">
                   <li class="parameters__dots-item active"></li>
@@ -386,7 +392,7 @@
                   <ul class="complectation__column-first">
                     <li class="complectation__item">
                       <label class="checkbox__lable">
-                        <p>Защита от детей</p>
+                        Защита от детей
                         <input class="checkbox__real" type="checkbox" checked />
                         <span class="checkbox__fake"></span>
                       </label>
@@ -400,7 +406,7 @@
                     </li>
                     <li class="complectation__item">
                       <label class="checkbox__lable">
-                        <p>Защита от детей</p>
+                        Защита от детей
                         <input class="checkbox__real" type="checkbox" />
                         <span class="checkbox__fake"></span>
                       </label>
@@ -416,7 +422,7 @@
                   <ul class="complectation__column-second">
                     <li class="complectation__item">
                       <label class="checkbox__lable">
-                        <p>Защита от детей</p>
+                        Защита от детей
                         <input class="checkbox__real" type="checkbox" />
                         <span class="checkbox__fake"></span>
                       </label>
@@ -430,7 +436,7 @@
                     </li>
                     <li class="complectation__item">
                       <label class="checkbox__lable">
-                        <p>Защита от детей</p>
+                        Защита от детей
                         <input class="checkbox__real" type="checkbox" checked />
                         <span class="checkbox__fake"></span>
                       </label>
@@ -461,17 +467,63 @@
                 <span class="price__title">стоимость</span>
                 <span class="price__cost">99 000₽</span>
               </li>
-              <button class="catalog__btn">
-                <span class="catalog__text">Оставить заявку</span>
-                <span class="catalog__light1"></span>
-                <span class="catalog__light2"></span>
-              </button>
+              <li>
+                <button class="catalog__btn_narrow">
+                  <span class="catalog__text">Оставить заявку</span>
+                  <span class="catalog__light1"></span>
+                  <span class="catalog__light2"></span>
+                </button>
+              </li>
             </ul>
           </div>
         </section>
       </div>
     </main>
-    <footer></footer>
-    <script src="/scripts/range.js"></script>
+    <footer class="footer-bg">
+      <div class="wrapper">
+        <p class="footer-bg__title">связаться с нами</p>
+        <div class="footer">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <span class="footer__social">WhatsApp</span>
+              <span class="footer__content">+7911 306 4144</span>
+            </li>
+            <li class="footer__item">
+              <span class="footer__social">Телеграмм</span>
+              <span class="footer__content">@elite_fire</span>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <span class="footer__social">Почта</span>
+              <span class="footer__content email">info@elite-fire.ru</span>
+            </li>
+            <li class="footer__item">
+              <span class="footer__social">Наш адрес</span>
+              <span class="footer__content"
+                >Россия, г. Москва, <br />
+                Варшавское шоссе, 170 г
+              </span>
+            </li>
+          </ul>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <span class="footer__social">Телефон</span>
+              <span class="footer__content tel">8 911 306 4144</span>
+            </li>
+            <li class="footer__item">
+              <button class="footer__btn">Связатся с менеджером</button>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-down">
+          <p class="footer-down__logo">elite fire</p>
+          <p class="footer-down__content">2020-2021</p>
+          <p class="footer-down__content">ООО “МЕТАЛЛЭЛЕКТРОИНВЕСТ”</p>
+          <p class="footer-down__content">Пользовательское соглашение</p>
+        </div>
+      </div>
+      <span class="footer-bg__span"></span>
+    </footer>
   </body>
 </html>

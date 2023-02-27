@@ -563,7 +563,17 @@ body {
     }
     &__photo {
       position: relative;
-
+      &_shadow {
+        position: absolute;
+        width: 570px;
+        height: 284px;
+        left: 21px;
+        top: 128px;
+        background: #000000;
+        filter: blur(100px);
+        border-radius: 300px;
+        z-index: -10;
+      }
       &_desc {
         display: inline-block;
         font-weight: 400;
@@ -667,6 +677,15 @@ body {
     background-color: #eccf94;
     border-radius: 1px;
     z-index: 0;
+    &_narrow {
+      width: 254px;
+      overflow: hidden;
+      position: relative;
+      height: 60px;
+      background-color: #eccf94;
+      border-radius: 1px;
+      z-index: 0;
+    }
   }
   &__text {
     font-weight: 500;
@@ -786,6 +805,7 @@ body {
       font-size: 18px;
       line-height: 55px;
       color: #ffffff;
+      margin: -15px 0 10px 0;
       input {
         margin: 0 47px 0 39px;
       }
@@ -819,21 +839,18 @@ body {
     }
     &__dots-item {
       position: absolute;
-      top: 135px;
+      top: 113px;
       left: 135px;
       width: 9px;
       height: 1px;
       background-color: #464239;
       &:nth-child(2) {
-        top: 135px;
         left: 148px;
       }
       &:nth-child(3) {
-        top: 135px;
         left: 161px;
       }
       &:nth-child(4) {
-        top: 135px;
         left: 174px;
       }
       &.active {
@@ -946,6 +963,12 @@ body {
   &__item {
     display: flex;
     flex-direction: column;
+    &:nth-child(2) {
+      margin-left: 40px;
+    }
+    &:nth-child(3) {
+      margin-left: 80px;
+    }
   }
   &__title {
     font-weight: 500;
@@ -971,5 +994,110 @@ body {
     font-size: 36px;
     letter-spacing: 0.05em;
     color: #ffcf7a;
+  }
+}
+.footer-bg {
+  position: relative;
+  background: #121212;
+  &__span {
+    position: absolute;
+    bottom: 100px;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background-color: #232323;
+  }
+  &__title {
+    padding: 75px 0 75px 0;
+    font-weight: 250;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(
+      199.91deg,
+      #ffffff 67.36%,
+      rgba(255, 255, 255, 0) 96.46%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+    &__item {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &__social {
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 36px;
+      color: #949494;
+    }
+    &__content {
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 33px;
+      color: #ffffff;
+      margin-bottom: 35px;
+      &.tel {
+        font-size: 36px;
+        margin-bottom: 61px;
+      }
+      &.email {
+        color: #ffcf7a;
+      }
+    }
+    &__btn {
+      box-sizing: border-box;
+      width: 279px;
+      height: 60px;
+      border: 1px solid #ceb787;
+      border-radius: 2px;
+      background-color: unset;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+  .footer-down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    &__logo {
+      font-family: 'Scania Sans CY Headline';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 70px;
+      letter-spacing: 0.105em;
+      color: #ffffff;
+    }
+    &__content {
+      font-family: 'Lab Grotesque';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      letter-spacing: 0.05em;
+      color: #6d6d6d;
+      &:nth-child(2) {
+        margin-left: -248px;
+      }
+      &:nth-child(3) {
+        margin-left: -323px;
+      }
+    }
   }
 }
