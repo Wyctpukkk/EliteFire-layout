@@ -546,3 +546,104 @@ body {
     color: #464239;
   }
 }
+.sliders-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  .fuel {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 50%;
+    &__title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 36px;
+      color: #ffffff;
+      margin-bottom: 25px;
+    }
+    &__photo {
+      position: relative;
+
+      &_desc {
+        display: inline-block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 27px;
+        color: #ffffff;
+        padding-bottom: 8px;
+        margin-bottom: 19px;
+        border-bottom: 1px solid rgba(255, 207, 122, 0.72);
+      }
+      &_span {
+        position: absolute;
+        width: 58.25px;
+        height: 1px;
+        top: 59px;
+        left: 439px;
+        background-color: rgba(255, 207, 122, 0.72);
+        transform: rotate(55.49deg);
+      }
+      &_img {
+      }
+    }
+  }
+  .complectation {
+    margin: 20px 0 80px 0;
+    &__column {
+      display: flex;
+    }
+    &__column-first {
+      margin-right: 120px;
+    }
+    &__column-second {
+    }
+    &__title {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: #757575;
+      margin-bottom: 20px;
+    }
+
+    &__item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 27px;
+      color: #ffffff;
+    }
+  }
+  .slider {
+    &__title {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 40px;
+      color: #ffffff;
+      margin-bottom: 25px;
+    }
+    &__desc {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 27px;
+      color: #ffffff;
+      margin-bottom: 50px;
+    }
+    &__img {
+      position: relative;
+      width: 537px;
+      height: 346px;
+      background-color: #121212;
+      border-radius: 2px;
+      &_next {
+        position: absolute;
+        bottom: 45px;
+        left: 78px;
+      }
+      &_prev {
+        position: absolute;
+        bottom: 45px;
+        left: 44px;
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
