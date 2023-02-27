@@ -342,8 +342,136 @@
             </li>
           </ul>
         </article>
+        <section class="constructor">
+          <p class="constructor__title">вы автор вашего камина</p>
+          <div class="constructor__columns">
+            <img
+              class="constructor__preview"
+              src="/img/kamin-4.png"
+              alt="kamin"
+            />
+            <article class="parameters">
+              <div class="parameters__length">
+                <p class="parameters__title">Выберите длину</p>
+                <div class="parameters__range-input">
+                  <span>0.5 м</span>
+                  <input
+                    class="range"
+                    type="range"
+                    value="75"
+                    min="0"
+                    max="100"
+                  /><span>10 м</span>
+                </div>
+              </div>
+              <div class="parameters__panel">
+                <p class="parameters__title">Лицевая панель</p>
+                <ul class="parameters__list">
+                  <img class="parameters__list_prev" src="/img/arrow.png" />
+                  <li class="parameters__item">
+                    <img src="/img/panel.png" alt="panel" />
+                  </li>
+                  <img class="parameters__list_next" src="/img/arrow.png" />
+                </ul>
+                <ul class="parameters__dots-list">
+                  <li class="parameters__dots-item active"></li>
+                  <li class="parameters__dots-item"></li>
+                  <li class="parameters__dots-item"></li>
+                  <li class="parameters__dots-item"></li>
+                </ul>
+              </div>
+              <article class="complectation">
+                <p class="complectation__title">Дополнительные функции</p>
+                <div class="complectation__column">
+                  <ul class="complectation__column-first">
+                    <li class="complectation__item">
+                      <label class="checkbox__lable">
+                        <p>Защита от детей</p>
+                        <input class="checkbox__real" type="checkbox" checked />
+                        <span class="checkbox__fake"></span>
+                      </label>
+                    </li>
+                    <li class="complectation__item">
+                      <label class="checkbox__lable">
+                        Wi-Fi
+                        <input class="checkbox__real" type="checkbox" />
+                        <span class="checkbox__fake"></span>
+                      </label>
+                    </li>
+                    <li class="complectation__item">
+                      <label class="checkbox__lable">
+                        <p>Защита от детей</p>
+                        <input class="checkbox__real" type="checkbox" />
+                        <span class="checkbox__fake"></span>
+                      </label>
+                    </li>
+                    <li class="complectation__item">
+                      <label class="checkbox__lable">
+                        Wi-Fi
+                        <input class="checkbox__real" type="checkbox" />
+                        <span class="checkbox__fake"></span>
+                      </label>
+                    </li>
+                  </ul>
+                  <ul class="complectation__column-second">
+                    <li class="complectation__item">
+                      <label class="checkbox__lable">
+                        <p>Защита от детей</p>
+                        <input class="checkbox__real" type="checkbox" />
+                        <span class="checkbox__fake"></span>
+                      </label>
+                    </li>
+                    <li class="complectation__item">
+                      <label class="checkbox__lable">
+                        Wi-Fi
+                        <input class="checkbox__real" type="checkbox" />
+                        <span class="checkbox__fake"></span>
+                      </label>
+                    </li>
+                    <li class="complectation__item">
+                      <label class="checkbox__lable">
+                        <p>Защита от детей</p>
+                        <input class="checkbox__real" type="checkbox" checked />
+                        <span class="checkbox__fake"></span>
+                      </label>
+                    </li>
+                    <li class="complectation__item">
+                      <label class="checkbox__lable">
+                        Wi-Fi
+                        <input class="checkbox__real" type="checkbox" />
+                        <span class="checkbox__fake"></span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+              </article>
+            </article>
+          </div>
+          <div class="price">
+            <ul class="price__list">
+              <li class="price__item">
+                <span class="price__title">длина</span>
+                <span class="price__content">6.5м</span>
+              </li>
+              <li class="price__item">
+                <span class="price__title">лицевая панель</span>
+                <div class="price__circle"></div>
+              </li>
+              <li class="price__item">
+                <span class="price__title">стоимость</span>
+                <span class="price__cost">99 000₽</span>
+              </li>
+              <button class="catalog__btn">
+                <span class="catalog__text">Оставить заявку</span>
+                <span class="catalog__light1"></span>
+                <span class="catalog__light2"></span>
+              </button>
+            </ul>
+          </div>
+        </section>
       </div>
     </main>
     <footer></footer>
+    <script src="/scripts/range.js"></script>
   </body>
 </html>

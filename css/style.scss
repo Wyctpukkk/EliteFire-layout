@@ -740,3 +740,236 @@ body {
     object-fit: cover;
   }
 }
+
+.constructor {
+  &__title {
+    font-weight: 250;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    background: linear-gradient(
+      235.41deg,
+      #ffffff 28.47%,
+      rgba(255, 255, 255, 0.18) 91.88%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  &__columns {
+    display: flex;
+    margin-top: 67px;
+  }
+  &__preview {
+    margin-right: 85px;
+    width: 533px;
+    height: 374px;
+  }
+  .parameters {
+    &__length {
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 55px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: -20px;
+    }
+    &__range-input {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 55px;
+      color: #ffffff;
+      input {
+        margin: 0 47px 0 39px;
+      }
+    }
+    &__panel {
+      position: relative;
+      display: inline-block;
+    }
+    &__list {
+      position: relative;
+      &_prev {
+        position: absolute;
+        top: 23px;
+        left: 0px;
+        transform: rotate(180deg);
+      }
+      &_next {
+        position: absolute;
+        top: 23px;
+        right: -36px;
+      }
+    }
+
+    &__item {
+      margin-left: 40px;
+    }
+    &__dots-list {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+    &__dots-item {
+      position: absolute;
+      top: 135px;
+      left: 135px;
+      width: 9px;
+      height: 1px;
+      background-color: #464239;
+      &:nth-child(2) {
+        top: 135px;
+        left: 148px;
+      }
+      &:nth-child(3) {
+        top: 135px;
+        left: 161px;
+      }
+      &:nth-child(4) {
+        top: 135px;
+        left: 174px;
+      }
+      &.active {
+        background-color: #ffcf7a;
+      }
+    }
+  }
+  .complectation {
+    margin: 20px 0 80px 0;
+    &__column {
+      display: flex;
+    }
+    &__column-first {
+      width: 220px;
+      margin-right: 143px;
+    }
+    &__column-second {
+      width: 220px;
+    }
+    &__title {
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 55px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.5);
+    }
+
+    &__item {
+      position: relative;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 30px;
+      color: #ffffff;
+    }
+  }
+}
+
+// Checkbox
+/* для элемента input c type="checkbox" */
+.checkbox {
+  &__lable {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__real {
+    display: none;
+  }
+  &__fake {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ceb787;
+    border-radius: 2px;
+
+    &::before {
+      position: relative;
+      display: block;
+      width: 20px;
+      height: 20px;
+      top: 0px;
+      left: 0px;
+      content: '';
+      background: center url(/img/plus.png);
+      opacity: 0;
+      transition-duration: 0.5s;
+    }
+  }
+}
+.checkbox__real:checked + .checkbox__fake::before {
+  opacity: 1;
+}
+
+// input
+
+.range {
+  height: 2px;
+  width: 410px;
+  appearance: none;
+  background: linear-gradient(to right, #ffcf7a 75%, #646464 75%);
+  outline: none;
+}
+.range::-webkit-slider-thumb {
+  height: 30px;
+  width: 30px;
+  background: #ffcf7a;
+  border-radius: 2px;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+}
+.range::-moz-range-thumb {
+  height: 30px;
+  width: 30px;
+  background: #ffcf7a;
+  border-radius: 2px;
+  appearance: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.price {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 89px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 55px;
+    letter-spacing: 0.135em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  &__content {
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+  }
+  &__circle {
+    width: 28px;
+    height: 28px;
+    background: #b8542a;
+    border-radius: 50%;
+  }
+  &__cost {
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    color: #ffcf7a;
+  }
+}

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(/css/resetstyle.css);
 @import url(/css/fonts.css);
 * {
@@ -677,4 +678,224 @@ body {
 .title-photo__content {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.constructor__title {
+  font-weight: 250;
+  font-size: 40px;
+  line-height: 55px;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  background: linear-gradient(235.41deg, #ffffff 28.47%, rgba(255, 255, 255, 0.18) 91.88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.constructor__columns {
+  display: flex;
+  margin-top: 67px;
+}
+.constructor__preview {
+  margin-right: 85px;
+  width: 533px;
+  height: 374px;
+}
+.constructor .parameters__title {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 55px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: -20px;
+}
+.constructor .parameters__range-input {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 55px;
+  color: #ffffff;
+}
+.constructor .parameters__range-input input {
+  margin: 0 47px 0 39px;
+}
+.constructor .parameters__panel {
+  position: relative;
+  display: inline-block;
+}
+.constructor .parameters__list {
+  position: relative;
+}
+.constructor .parameters__list_prev {
+  position: absolute;
+  top: 23px;
+  left: 0px;
+  transform: rotate(180deg);
+}
+.constructor .parameters__list_next {
+  position: absolute;
+  top: 23px;
+  right: -36px;
+}
+.constructor .parameters__item {
+  margin-left: 40px;
+}
+.constructor .parameters__dots-list {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.constructor .parameters__dots-item {
+  position: absolute;
+  top: 135px;
+  left: 135px;
+  width: 9px;
+  height: 1px;
+  background-color: #464239;
+}
+.constructor .parameters__dots-item:nth-child(2) {
+  top: 135px;
+  left: 148px;
+}
+.constructor .parameters__dots-item:nth-child(3) {
+  top: 135px;
+  left: 161px;
+}
+.constructor .parameters__dots-item:nth-child(4) {
+  top: 135px;
+  left: 174px;
+}
+.constructor .parameters__dots-item.active {
+  background-color: #ffcf7a;
+}
+.constructor .complectation {
+  margin: 20px 0 80px 0;
+}
+.constructor .complectation__column {
+  display: flex;
+}
+.constructor .complectation__column-first {
+  width: 220px;
+  margin-right: 143px;
+}
+.constructor .complectation__column-second {
+  width: 220px;
+}
+.constructor .complectation__title {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 55px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.constructor .complectation__item {
+  position: relative;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+/* для элемента input c type="checkbox" */
+.checkbox__lable {
+  display: flex;
+  justify-content: space-between;
+}
+.checkbox__real {
+  display: none;
+}
+.checkbox__fake {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ceb787;
+  border-radius: 2px;
+}
+.checkbox__fake::before {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  left: 0px;
+  content: "";
+  background: center url(/img/plus.png);
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.checkbox__real:checked + .checkbox__fake::before {
+  opacity: 1;
+}
+
+.range {
+  height: 2px;
+  width: 410px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: linear-gradient(to right, #ffcf7a 75%, #646464 75%);
+  outline: none;
+}
+
+.range::-webkit-slider-thumb {
+  height: 30px;
+  width: 30px;
+  background: #ffcf7a;
+  border-radius: 2px;
+  -webkit-appearance: none;
+          appearance: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.range::-moz-range-thumb {
+  height: 30px;
+  width: 30px;
+  background: #ffcf7a;
+  border-radius: 2px;
+  -moz-appearance: none;
+       appearance: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.price__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 89px;
+}
+.price__item {
+  display: flex;
+  flex-direction: column;
+}
+.price__title {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 55px;
+  letter-spacing: 0.135em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+}
+.price__content {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+}
+.price__circle {
+  width: 28px;
+  height: 28px;
+  background: #b8542a;
+  border-radius: 50%;
+}
+.price__cost {
+  font-weight: 300;
+  font-size: 36px;
+  letter-spacing: 0.05em;
+  color: #ffcf7a;
 }/*# sourceMappingURL=style.css.map */
