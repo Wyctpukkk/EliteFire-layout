@@ -1085,6 +1085,7 @@ body.active {
   &__content {
     object-fit: cover;
     width: 100%;
+    height: 100%;
   }
   @media (max-width: 600px) {
     &__title {
