@@ -17,12 +17,10 @@
             биокамины
           </p>
         </div>
-        <nav class="nav">
+        <nav class="nav active">
           <ul class="nav__list">
             <li class="nav__item"><a href="#">Продукция</a></li>
-            <li class="nav__item">
-              <a class="active" href="#">конструктор</a>
-            </li>
+            <li class="nav__item"><a href="#">конструктор</a></li>
             <li class="nav__item"><a href="#">опыт</a></li>
             <li class="nav__item"><a href="#">контакты</a></li>
           </ul>
@@ -30,6 +28,12 @@
             <img src="/img/phone.png" alt="phone img" />
           </button>
         </nav>
+        <button class="header__menu">
+          menu
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </header>
     </div>
     <main>
@@ -467,7 +471,7 @@
                 <span class="price__title">стоимость</span>
                 <span class="price__cost">99 000₽</span>
               </li>
-              <li>
+              <li class="price__item">
                 <button class="catalog__btn_narrow">
                   <span class="catalog__text">Оставить заявку</span>
                   <span class="catalog__light1"></span>
@@ -525,5 +529,6 @@
       </div>
       <span class="footer-bg__span"></span>
     </footer>
+    <script src="/script.js/burger.js"></script>
   </body>
 </html>
